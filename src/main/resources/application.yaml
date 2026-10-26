@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: alpha-power-system
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/alpha_power
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
+
+jwt:
+  secret: YWxwaGFQb3dlclN5c3RlbVNlY3JldEtleUZvckp3dEF1dGhlbnRpY2F0aW9uMjAyNkFscGhhUG93ZXJTeXN0ZW0=
+  expiration: 86400000
